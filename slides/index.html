@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Developing Data Products</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Developing Data Products">
+  <meta name="author" content="Brian M. Baczyk">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Developing Data Products</h1>
+    <h2>Understanding default data frames in R</h2>
+    <p>Brian M. Baczyk<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <article data-timings="">
+    <style>
+.title-slide {
+  background-color: #EDE0CF; /* #EDE0CF; ; #CA9F9D*/
+}
+</style>
+
+<h2>Developing Data Products - Week 4 Class Project</h2>
+
+<p>R ships with many datasets that are used throughout as examples to support learning
+analytical techniques. However, there is no easy way to visualize the dataset, its
+contents, and the relationships between variables in the dataset.</p>
+
+<p>This project focuses on data frames that are inlcuded with the base version of R.
+There are many other libraries that are available in R, many with their own supporting
+data. This project could be easily be extended to provide insight into their datasets.</p>
+
+<p>The next slide will describe the solution, and the fourth slide will provide example output.
+The fifth slide will provide the locations of the application, repo, and this slide show.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Developing Data Products - Week 4 Class Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <h2>Description of the solution</h2>
+
+<p>This problem was developed using Shiny to provide a web-based solution for those users
+who don&#39;t have R installed, or, perhaps are using a mobile device.</p>
+
+<p>In the user interface (ui.R), the solution uses the data() command to build a data frame of 
+the datasets available in the base R install. Since this solution focuses on data frames,
+the solution next determines the class() of each dataset and removes any that are not dataframes.</p>
+
+<p>The final list is sorted alphabetically and display to the user in the web pages dropdown list. When the user changes the
+selection, the left hand side of the page refereshes with the profile of the selected data frame. The profile includes the ouput
+of str() and ggpairs(), which is a ggplot enhanced version of the base R function pairs().</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Developing Data Products - Week 4 Class Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <h2>Example output - ggpairs(mtcars) dataset</h2>
+
+<p><img src="assets/fig/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Developing Data Products - Week 4 Class Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <h2>Code locations</h2>
+
+<h3>Github repo: <a href="https://github.com/bbaczyk/ddpweek4/gh-pages">https://github.com/bbaczyk/ddpweek4/gh-pages</a></h3>
+
+<h3>shiny app: <a href="https://bbaczyk.shinyapps.io/week4/">https://bbaczyk.shinyapps.io/week4/</a></h3>
+
+<h3>Slide presentation: <a href="https://bbaczyk.github.io/ddpweek4/index.html">https://bbaczyk.github.io/ddpweek4/index.html</a></h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='NA'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Developing Data Products - Week 4 Class Project'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Developing Data Products - Week 4 Class Project'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Developing Data Products - Week 4 Class Project'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
